@@ -31,7 +31,7 @@ ${message.author.username}: ${message.content}\n\
 ChatGPT:`,
             temperature: 0.9,
             max_tokens: 100,
-            stop: ["ChatGPT:", "Young Trial:"], // Set your name here...
+            stop: ["ChatGPT:", ""], // Set your name here...
         })
 
         message.reply(`${gptResponse.data.choices[0].text}`);
